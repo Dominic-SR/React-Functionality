@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 
 function Base() {
     var TableData = [
-        {sno:"1",title:"Button Click  With Multible Input",link:"buttonclickwithmultipleinput"}
+        {sno:"1",title:"Button Click  With Multible Input",link:"buttonclickwithmultipleinput"},
+        {sno:"2",title:"Use Effect Hooks",link:"useeffecthooks"}
     ]
     return (
         <div class="container">
@@ -18,15 +19,15 @@ function Base() {
             </tr>
           </thead>
           <tbody>
+          {TableData.map((data)=>(
             <tr>
-            {TableData.map((data)=>(
               <>
               <td>{data.sno}</td>
               <td>{data.title}</td>
               <td><NavLink to={data.link}><button className="btn btn-success">Click</button></NavLink></td>
               </>
-              ))}
             </tr>
+            ))}
           </tbody>
         </table>
       </div>
