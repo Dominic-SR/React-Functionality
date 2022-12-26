@@ -4,9 +4,10 @@ import { NavLink } from "react-router-dom";
 function Base() {
     var TableData = [
         {sno:"1",title:"Button Click  With Multible Input",link:"buttonclickwithmultipleinput"},
-        {sno:"2",title:"Use Effect Hooks",link:"useeffecthooks"},
-        {sno:"3",title:"Use Context Hooks",link:"usecontexthooks"},
-        {sno:"4",title:"Use Reducer Hooks",link:"usecontexthooks"}
+        {sno:"2",title:"Use State Hooks",link:"usestatehooks"},
+        {sno:"3",title:"Use Effect Hooks",link:"useeffecthooks"},
+        {sno:"4",title:"Use Context Hooks",link:"usecontexthooks"},
+        {sno:"5",title:"Use Reducer Hooks",link:"usecontexthooks"}
     ]
     return (
         <div class="container">
