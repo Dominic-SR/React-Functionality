@@ -42,7 +42,13 @@ function Index() {
       }}>Add</button>
       <ul>
         {artists2.map(artist =>(
-          <li key={artist.id}>{artist.name}</li>
+          <li key={artist.id}>{artist.name}
+          <button onClick={()=>{
+            setArtists2(
+              artists2.filter(a=>a.id !== artist.id)
+            )
+          }}>Delete</button>
+          </li>
         ))}  
       </ul>  
       <hr/>
